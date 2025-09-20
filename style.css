@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Savate:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Rakkas&family=Savate:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --cor1: #F2E5D5;
+    --cor2: #D46B42;
+    --cor3: #8C4A2F;
+    --cor4: #5A6E39;
+    --cor5: #3A6DA8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor1);
+    
+}
+
+
+.cabecalho {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor3);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      z-index: 10;
+    position: fixed;
+    border-radius: 0px 0px 30px 30px;
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    background-color: #8C4A2F;
+    padding: 6px 20px 6px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: solid 0.5px;
+}
+
+a:hover {
+    background-color: var(--cor1);
+    color: #000;
+    transform: scale(1.05);
+    border-color: var(--cor1);
+}
+
+.active {
+    background-color: var(--cor1);
+    color: #000;
+    border-color: var(--cor1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+
+.overlay-container {
+  position: relative;
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  color: var(--cor1);
+  font-size: 36px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.overlay-text:hover{
+    color: var(--cor2); 
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+
+.conteudo{
+    display: flex;
+    gap: 10px;
+    width: 70vw;
+    margin: 10px 0px 0px 30px;
+    
+}
+
+#foto {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--cor2);
+}
+
+h2 {
+    color: var(--cor3);
+    
+}
+
+h3 {
+    color: var(--cor4);
+     font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#img-serra-capivara {
+    width: 80vw;
+    border-radius: 5px;
+}
+
+#img-capivara {
+    width: 70px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#img-capivara:hover {
+   transform: rotate(360deg);
+   /* transform: translate(10px, 5px) scale(1.05) rotate(2deg); */
+}
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 10px;
+   
+   
+}
